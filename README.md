@@ -16,8 +16,4 @@ dune build
 
 4. Open VSCode with the VSRocq extension.
 
-5. Open the `Second/S.v` file and try to evaluate it with VSRocq. This will not work due to the first `Import` line. Here are some alternatives that all work whenever doing `dune build`, but do not with VSRocq:
-
-- `Require Import First.F.`
-- `Require Import F.`
-- `From Repro.First Require Import F.`
+5. Open the `S.v` file and try to evaluate it with VSRocq. This will not work due to the first `Import` line. `Require Import Repro.F` does not work either. Both imports do work well whenever doing `dune build`.
