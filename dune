@@ -1,0 +1,6 @@
+(include_subdirs qualified)
+
+(rocq.theory
+ (name Repro)
+ (package repro)
+ (generate_project_file))
